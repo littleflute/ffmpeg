@@ -1,0 +1,103 @@
+<!DOCTYPE html>	  
+<html>  
+<body> 
+<script src="https://www.w3schools.com/lib/w3.js"></script>				
+<script src="https://littleflute.github.io/JavaScript/blclass.js"></script>		
+<script src="https://littleflute.github.io/JavaScript/blApp1.js"></script>		
+<div id="id_div_mp4i_bat_info" >								
+<a target="_blank" href="https://github.com/littleflute/ted1/edit/master/docs/61/mp4i.bat">v1.3. 112 * </a>	
+<a href="..">[..]</a> <button id="id_btn_4_blApp" style="float:right;">+blApp</button>	
+</div>						 
+<div id="DivCurTime"></div> 			
+<br>  
+<div id="DivButtons"> 				
+<div id="DivButtons"> 				
+<div id="DivButtons"> 				
+<button onclick="play('0.mp3')">1:0.mp3</button> 
+<button onclick="play('1.mp3')">2:1.mp3</button> 
+<button onclick="play('10.mp3')">3:10.mp3</button> 
+<button onclick="play('2.mp3')">4:2.mp3</button> 
+<button onclick="play('3.mp3')">5:3.mp3</button> 
+<button onclick="play('4.mp3')">6:4.mp3</button> 
+<button onclick="play('5.mp3')">7:5.mp3</button> 
+<button onclick="play('6.mp3')">8:6.mp3</button> 
+<button onclick="play('7.mp3')">9:7.mp3</button> 
+<button onclick="play('8.mp3')">10:8.mp3</button> 
+<br> 
+<button onclick="play('9.mp3')">11:9.mp3</button> 
+<button onclick="play('a.mp3')">12:a.mp3</button> 
+<button onclick="play('b.mp3')">13:b.mp3</button> 
+<button onclick="play('c.mp3')">14:c.mp3</button> 
+<button onclick="play('d.mp3')">15:d.mp3</button> 
+<button onclick="play('e.mp3')">16:e.mp3</button> 
+<button onclick="play('f.mp3')">17:f.mp3</button> 
+<button onclick="play('g.mp3')">18:g.mp3</button> 
+<button onclick="play('h.mp3')">19:h.mp3</button> 
+<button onclick="play('i.mp3')">20:i.mp3</button> 
+<br> 
+<button onclick="play('j.mp3')">21:j.mp3</button> 
+<button onclick="play('k.mp3')">22:k.mp3</button> 
+<button onclick="play('l.mp3')">23:l.mp3</button> 
+<button onclick="play('m.mp3')">24:m.mp3</button> 
+<button onclick="play('n.mp3')">25:n.mp3</button> 
+<button onclick="play('o.mp3')">26:o.mp3</button> 
+<button onclick="play('p.mp3')">27:p.mp3</button> 
+<button onclick="play('q.mp3')">28:q.mp3</button> 
+<button onclick="play('r.mp3')">29:r.mp3</button> 
+<button onclick="play('s.mp3')">30:s.mp3</button> 
+<br> 
+<button onclick="play('t.mp3')">31:t.mp3</button> 
+<button onclick="play('u.mp3')">32:u.mp3</button> 
+<button onclick="play('v.mp3')">33:v.mp3</button> 
+<button onclick="play('w.mp3')">34:w.mp3</button> 
+<button onclick="play('x.mp3')">35:x.mp3</button> 
+<button onclick="play('y.mp3')">36:y.mp3</button> 
+<button onclick="play('z.mp3')">37:z.mp3</button> 
+ </div> 			
+<br> 	
+<div id="id_div_4_gif" style="border:1px solid green;" >				
+</div> 									
+<br> 	
+<div id="id_div_4_jpg" style="border:1px solid blue;" >				
+</div> 									
+<br> 	
+<div id="id_div_4_png" style="border:1px solid blue;" >				
+</div> 								 
+<br> 	
+<div id="id_div_4_lrcJS" style="border:1px solid red;display: none;" >		
+</div> 								
+<script>  
+var s = '::<div id="id_4_plxTool"> </div>';				
+var str4V = '<video id="myVideo" width="720" height="480" controls> ';				
+str4V += '<source src="v1.mp4" type="video/mp4">Your browser does not support HTML5 video.'; 	
+str4V += '</video>';  										
+var md4v = blo0.blMD( "id_mdiv_4_myVideo" , s , 300,100,720,480,blColor[1]); 	
+  md4v.v = blo0.blDiv(md4v, md4v.id+"v" , str4V , blGrey[1]); 	
+var vid = document.getElementById("myVideo"); 
+function play(i) {
+    vid.src=i; 
+    vid.load();
+    vid.play(); 
+}
+function getCurTime() {  
+   document.getElementById("DivCurTime").innerHTML= vid.currentTime; 
+}   
+function setCurTime(t) { 
+   vid.currentTime=t;  
+   getCurTime();
+}  
+function moveMS(ms) { 
+  vid.currentTime+=ms;
+  getCurTime();  
+}   
+var btnPlx = blo0.blBtn(bl$("id_4_plxTool"),"id_btn_Plx","+plx",blGrey[0]);  
+btnPlx.onclick = function() { 
+  if(btnPlx.Load){													
+ 	if(btnPlx.n){}													
+ 	else{btnPlx.n=true;_on_off_div(this,bl$("id_mdiv_plx"));}		
+   _on_off_div(this,bl$("id_mdiv_plx"));  							
+  }																
+  else  { blo0.blScript ("id_script_plx","plx.js"); btnPlx.Load=true;	}
+}   
+</script> 
+</body> 
