@@ -1,0 +1,1 @@
+ffmpeg -i l10a.mp4   -i r10a.mp4   -filter_complex "[0:v]pad=1080:1920[int];[int][1:v]overlay=540:0[vid]"  -map [vid] -c:v libx264 -crf 23 -preset veryfast c.mp4
