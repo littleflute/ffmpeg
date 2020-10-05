@@ -1,1 +1,1 @@
-a
+ffmpeg -y -i ted486.mp4 -i hz22_1034.jpg -filter_complex "[0:v][1:v]overlay=x=10:y=10:enable=between(t\,1\,5)" ted486_hz22logo1.mp4

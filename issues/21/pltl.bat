@@ -1,0 +1,1 @@
+ffmpeg -y -i %1 -i %2 -filter_complex "overlay=x=main_w*0.01:y=main_h*0.01" %3
