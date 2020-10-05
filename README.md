@@ -1,4 +1,4 @@
-## [v0.0.13](https://github.com/littleflute/ffmpeg/edit/master/README.md) [weixin](https://github.com/littleflute/weixin) [games](https://github.com/littleflute/games)
+## [v0.0.14](https://github.com/littleflute/ffmpeg/edit/master/README.md) [weixin](https://github.com/littleflute/weixin) [games](https://github.com/littleflute/games)
 ### <a href="https://ffmpeg.org/documentation.html" target="_blank">https://ffmpeg.org/documentation.html</a>
 
 ### [issues](issues) [t.html](t.html)
@@ -7,6 +7,7 @@
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="https://littleflute.github.io/JavaScript/blclass.js"></script>
 <script src="https://littleflute.github.io/JavaScript/blApp.js"></script>
+<script src="blPlx.js"></script>
 
 <a id = "id_btn_4_blApp" href="#" class="w3-button w3-bar-item" style="float:right;">[+]</a>
 <a id = "id_btn_4_hz22_plx" href="#" class="w3-button w3-bar-item" style="float:right;">+plx</a> 
