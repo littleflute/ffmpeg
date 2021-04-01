@@ -1,3 +1,3 @@
 module.exports = function(){
-  return 'test1';
+  return 'test1.11';
 }
